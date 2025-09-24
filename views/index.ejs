@@ -12,17 +12,17 @@
     <% if (sat == 1) { %>
      
     <span id="glowRED">
-    User is in danger.
+    <%= name %> is in danger.
 </span>
 <br>
     Location sent only to you.
 <%} else {%>
 
 <span id="glowGREEN">
-    User is Safe Now.
+  <%= name %> is Safe Now.
 </span>
 <br>
-   User Last Location.
+<%= name %> Last Location.
 <%}%>
 </p>
 
