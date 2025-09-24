@@ -27,7 +27,8 @@ app.get("/:IDuser",async (req,res)=>{
 
         res.render('index.ejs',{
             map : `https://maps.google.com/maps?q=${Users[id].liveTracking.latitude},${Users[id].liveTracking.longitude}&z=15&output=embed`,
-            sat: statusN
+            sat: statusN,
+            name: Users[id].username
           });
         
     } catch (error) {
