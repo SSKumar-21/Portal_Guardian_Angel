@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Location Alert</title>
+  <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+  <h1>Current Location</h1>
+  <p>
+    <% if (sat == 1) { %>
+     
+    <span id="glowRED">
+    User is in danger.
+</span>
+<br>
+    Location sent only to you.
+<%} else {%>
+
+<span id="glowGREEN">
+    User is Safe Now.
+</span>
+<br>
+   User Last Location.
+<%}%>
+</p>
+
+  <iframe class="location-box" src=<%=map%> >
+  </iframe>
+  <script src="./Script/refresh.js"></script>
+</body>
+</html>
